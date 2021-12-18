@@ -5,48 +5,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Teko|Montserrat Alternates|Comfortaa|Pacifico">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Teko|Montserrat Alternates|Comfortaa|Sofia|Pacifico">
 </head>
 <style>
- .Teams{
-  background:white;
-  color:;
-  border: ;
-  box-shadow:1px 5px 8px 1px #B0B1B0;
-  margin:20px;
-  padding:20px;
-  font-family:Teko;
-  border-radius:50px;
-  background-image:url(PICTUES//Logo.jpg);
-  background-size: 100%;
- }
+ 
+#demo1,#demo3,#demo2{
+  background-color:#c14b0a;
+  padding:5px 5px 5px 5px ;
+  border-radius: 5px;
+  font-family:Pacifico;
+  color:#ffecba;
+  -webkit-text-stroke: #7b3b06 1px;
+  font-size: 15px;
+  font-weight:bold;
+}
+
+.Team1{
+  background:#feb10d;
+  -webkit-text-stroke:#7b3b06 0.8px;
+  color:#ffecba;
+  padding: 10px;
+  font-size:35px;
+  text-align:center;
+  border-radius:10px;
+  box-shadow:0 1px 4px 0 rgba(0,0,50,0.3 );
+} 
+.Ma{
+  background:#feb10d;
+  border-radius:10px;
+}
+.Ma1{
+  background:#fefae6;
+  border-radius:10px;
+}
+.T1{
+  margin-top: -24.8px;
+  margin-left:120px;
+}
 </style>
 <body>
-<div class="Teams" style=">
-  <h2 style="Font-family:Montserrat Alternates ">Team Name</h2>
-  <table width="110%">
-    <tr >
-      <td>
-        POINTS:
-      </td>
-      <td>
-        REGISTERED:
-      </td>
-    </tr>
-  </table>
-  <h3 style="font-family:Comfortaa">MEMBERS</h3>
-  <div style="font-family:Pacifico">
-  <li>807664406</li>
-  <li>807664406</li> 
-  <li>807664406</li>
-  <li>807664406</li>
-  <li>807664406</li>
-  <li></li>
-  </div>
+  <div class="Ma1">
     
 
+  <div class="Ma">
+    
+ 
+<div class="Teams">
+  <h1 style="Font-family:Pacifico" class="Team1">TOURNAMENT</h1>
 </div>
+  <table class="T1">
+      <th id="demo1">00</th><th>:</th>
+      <th id="demo2">00</th><th>:</th>
+      <th id="demo3">00</th>
+      
+  </table>
 
+</div>
+<p>6jdbdjdb</p>
+</div>
 </body>
+<script>
+  var countDownDate = new Date("Dec 19, 2021 21:5:").getTime();
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  document.getElementById("demo1").innerHTML =hours;
+  document.getElementById("demo2").innerHTML =minutes;
+  document.getElementById("demo3").innerHTML =seconds;
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo1").innerHTML = "×";
+    document.getElementById("demo2").innerHTML = "×";
+    document.getElementById("demo3").innerHTML = "×";
+  }
+}, 1000);
+</script>
 
 </html>
