@@ -1,0 +1,18 @@
+.c1{
+  background:#feb10d;
+}
+.R{
+  width:70px;
+}
+.c2{
+  background:white;
+  border:3px solid #feb10d;
+  padding-left:10px;
+}
+#demo,#demo1,#demo2,#demo3,#demo0{
+  color:#ffecba;
+  background:#feb10d;
+  -webkit-text-stroke: #7b3b06 1px;
+  border-radius:5px;
+  font-size:;
+}
